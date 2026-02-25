@@ -9,6 +9,7 @@ def start_game():
         placeholder = ""
         for i in range(len(random_word)):
             placeholder += "-"
+        print("The Number of letter the word has:-")
         print(placeholder)
         print(stages[6])
         lives=6
