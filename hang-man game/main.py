@@ -20,12 +20,12 @@ def start_game():
             if user_choice in correct_guesses:
                 print(f"You have already guessed this word {user_choice}")
             display = ""
-            for letter in random_word:
-                if user_choice == letter:
-                    display += letter
-                    correct_guesses.append(letter)
-                elif letter in correct_guesses:
-                   display += letter
+            for i in range(len(random_word)):
+                if user_choice == random_word[i]:
+                    display += random_word[i]
+                    correct_guesses.append(random_word[i])
+                elif random_word[i] in correct_guesses:
+                   display += random_word[i]
                 else:
                     display += "-"
             print(display)
