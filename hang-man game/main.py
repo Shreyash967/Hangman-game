@@ -16,7 +16,7 @@ def start_game():
         correct_guesses =[]
         game_over = False
         while not game_over:
-            print(f"You have R.lives: {lives}")
+            print(f"You have R.lives: {lives}/6")
             user_choice = input("Enter your choice:").lower()
             if user_choice in correct_guesses:
                 print(f"You have already guessed this word {user_choice}")
